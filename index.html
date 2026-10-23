@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shahin Shaik | Talent Acquisition & HR Specialist | MBA Candidate</title>
+  <meta name="description" content="Portfolio of Shahin Shaik, an ambitious MBA candidate (8.7 CGPA) skilled in Talent Acquisition, Recruiting, HR Analytics, Excel Data Modeling, and Technical Sourcing.">
+  <meta name="keywords" content="Shahin Shaik, Talent Acquisition, HR Specialist, Technical Recruiter, MBA, Hyderabad, SVR Engineering College, HR Analytics">
+  <meta name="author" content="Shahin Shaik">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Shahin Shaik | Talent Acquisition & HR Portfolio">
+  <meta property="og:description" content="Building high-impact talent pipelines through structured recruitment, analytical thinking, and technical fluency.">
+
+  <!-- Google Fonts: Plus Jakarta Sans, Inter, Fira Code -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons 6.5.1 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Warm Architectural Background Layer -->
+  <div class="bg-layer" aria-hidden="true">
+    <div class="arch-stage">
+      <div class="arch-panel arch-a"></div>
+      <div class="arch-panel arch-b"></div>
+      <div class="arch-panel arch-c"></div>
+      <div class="arch-panel arch-d"></div>
+      <div class="arch-panel arch-e"></div>
+      <div class="arch-panel arch-f"></div>
+      <div class="arch-panel arch-g"></div>
+      <div class="arch-panel arch-h"></div>
+    </div>
+
+    <div class="bg-orbs">
+      <span class="orb orb-1"></span>
+      <span class="orb orb-2"></span>
+      <span class="orb orb-3"></span>
+      <span class="orb orb-4"></span>
+    </div>
+    
+    <canvas id="bgCanvas" class="bg-canvas"></canvas>
+  </div>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-header" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-icon"><img src="assets/hr-hero.jpg" alt="Shahin Shaik" class="logo-photo"></span>
+        <span class="logo-text">Shahin<span class="gradient-text">.hr</span></span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#certifications" class="nav-link">My Experience</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn theme-btn" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <a href="#contact" class="btn btn-primary btn-sm nav-cta">Contact Us</a>
+        <button id="mobileMenuBtn" class="mobile-menu-btn" aria-label="Toggle Mobile Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-glow hero-glow-1"></div>
+      <div class="hero-glow hero-glow-2"></div>
+      <div class="container hero-container">
+        
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span>MBA Candidate • Talent Acquisition & HR</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Shahin Shaik</span>
+            <br>
+            <span class="typewriter-text" id="typewriter">Talent Acquisition Specialist</span>
+          </h1>
+
+          <p class="hero-description">
+            Postgraduate pursuing an MBA at SVR Engineering College (8.7 CGPA). Combining technical literacy, managerial skills, and analytical abilities to build high-performance talent acquisition pipelines.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Experience</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="assets/Shahin_Shaik_Resume.pdf" download="Shahin_Shaik_Resume.pdf" id="downloadCvBtn" class="btn btn-outline" title="Download Shahin Shaik Resume">
+              <i class="fa-solid fa-download"></i>
+              <span>Resume</span>
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <span class="social-label">Connect:</span>
+            <a href="mailto:alwaysshahin3@gmail.com" class="social-link" title="Compose Email to Shahin"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="profile-card-glass">
+            <div class="avatar-wrapper">
+              <div class="avatar-orbit orbit-1">
+                <span class="orbit-dot dot-1"></span>
+              </div>
+              <div class="avatar-orbit orbit-2">
+                <span class="orbit-dot dot-2"></span>
+              </div>
+              <div class="avatar-ring"></div>
+              <img src="assets/hr-hero.jpg" alt="Shahin Shaik - HR & Talent Acquisition" class="avatar-img" id="heroAvatar" style="border-radius: 50% !important; object-fit: cover; aspect-ratio: 1 / 1; width: 100%; height: 100%; display: block;">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Get To Know Me</span>
+          <h2 class="section-title">Postgraduate MBA Candidate with a Passion for People & Strategy</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text-card glass-card">
+            <h3>Who I Am</h3>
+            <p>
+              Spirited and vigorous postgraduate with a farming background, currently pursuing an MBA at SVR Engineering College (Autonomous), and motivated to secure a challenging position or internship opportunity in Talent Acquisition and Human Resources.
+            </p>
+            <p>
+              I intend to leverage technical knowledge, managerial skills, and business acumen to apply analytical abilities, enhance communication, and contribute to organizational goals while gaining industry experience in dynamic environments.
+            </p>
+
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <i class="fa-solid fa-check-circle"></i>
+                <span>Talent Acquisition, Candidate Screening & Evaluation</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-check-circle"></i>
+                <span>Hands-on Full Stack & Digital Marketing Experience</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-check-circle"></i>
+                <span>Advanced Microsoft Excel Analytics & Reporting</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-check-circle"></i>
+                <span>First Prize Winner in Banking NPA Research Presentation</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-stats-grid">
+            <div class="stat-card glass-card">
+              <div class="stat-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div class="stat-number">8.7</div>
+              <div class="stat-label">MBA CGPA (Current)</div>
+            </div>
+
+            <div class="stat-card glass-card">
+              <div class="stat-icon"><i class="fa-solid fa-diagram-project"></i></div>
+              <div class="stat-number" data-target="2">2</div>
+              <div class="stat-label">Corporate Internships</div>
+            </div>
+
+            <div class="stat-card glass-card">
+              <div class="stat-icon"><i class="fa-solid fa-award"></i></div>
+              <div class="stat-number" data-target="4">4</div>
+              <div class="stat-label">Verified Certifications</div>
+            </div>
+
+            <div class="stat-card glass-card">
+              <div class="stat-icon"><i class="fa-solid fa-trophy"></i></div>
+              <div class="stat-number">1st</div>
+              <div class="stat-label">Prize Winner (NPA PPT)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Core Capabilities</span>
+          <h2 class="section-title">Skills & Technologies</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="skills-filter">
+          <button class="skill-tab-btn active" data-category="all">All</button>
+          <button class="skill-tab-btn" data-category="hr">HR & Recruiting</button>
+          <button class="skill-tab-btn" data-category="tech">Analytics & Tech</button>
+          <button class="skill-tab-btn" data-category="tools">Tools & Office</button>
+        </div>
+
+        <div class="skills-grid" id="skillsGrid">
+          <!-- Dynamically Populated by JavaScript -->
+        </div>
+
+        <div class="soft-skills-block">
+          <h3 class="soft-skills-title"><i class="fa-solid fa-people-group"></i> Soft Skills & Professional Attributes</h3>
+          <div class="soft-skills-chips" id="softSkillsChips">
+            <!-- Dynamically Populated by JavaScript -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Applied Experience</span>
+          <h2 class="section-title">Featured Projects & Internships</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="projects-filter">
+          <button class="project-tab-btn active" data-filter="all">All Projects</button>
+          <button class="project-tab-btn" data-filter="technical">Technical Projects</button>
+          <button class="project-tab-btn" data-filter="marketing">Digital Marketing</button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Dynamically Populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section experience-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Academic Journey</span>
+          <h2 class="section-title">Education</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="timeline" id="timelineContainer">
+          <!-- Dynamically Populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section (My Experience) -->
+    <section class="section certs-section" id="certifications">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Verified Credentials</span>
+          <h2 class="section-title">My Experience & Certifications</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="certs-grid" id="certificationsGrid">
+          <!-- Dynamically Populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="section achievements-section" id="achievements">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Milestones</span>
+          <h2 class="section-title">Achievements & Recognition</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="achievements-grid" id="achievementsGrid">
+          <!-- Dynamically Populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Get In Touch</span>
+          <h2 class="section-title">Let's Work Together</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-card glass-card">
+            <h3>Contact Information</h3>
+            <p>Open for Full-Time Jobs, Talent Acquisition Internships, HR Trainee opportunities, and collaborative people operations roles.</p>
+
+            <div class="contact-items">
+              <div class="contact-item">
+                <a href="mailto:alwaysshahin3@gmail.com" class="contact-icon" title="Compose Email to Shahin"><i class="fa-solid fa-envelope"></i></a>
+                <div class="contact-details">
+                  <span class="detail-label">Email</span>
+                  <a href="mailto:alwaysshahin3@gmail.com" class="detail-val" title="Compose Email">alwaysshahin3@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="contact-details">
+                  <span class="detail-label">Location</span>
+                  <span class="detail-val">Hyderabad, Telangana, India</span>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fa-solid fa-calendar-check"></i></div>
+                <div class="contact-details">
+                  <span class="detail-label">Availability</span>
+                  <span class="detail-val">Full-Time Jobs & Internship Opportunities</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-box">
+              <h4>Quick Connect</h4>
+              <div class="social-icons">
+                <a href="mailto:alwaysshahin3@gmail.com" class="social-circle" title="Compose Email to Shahin"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Project Detail Modal -->
+  <div class="modal-overlay" id="projectModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-container glass-card">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="modal-body" id="modalBody">
+        <!-- Content injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <a href="#hero" class="brand-logo">
+          <span class="logo-icon"><img src="assets/hr-hero.jpg" alt="Shahin Shaik" class="logo-photo"></span>
+          <span class="logo-text">Shahin<span class="gradient-text">.hr</span></span>
+        </a>
+        <p>© <span id="currentYear">2026</span> Shahin Shaik. Crafted with passion & precision.</p>
+      </div>
+
+      <div class="footer-right">
+        <a href="#hero" class="back-to-top-btn" aria-label="Back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>

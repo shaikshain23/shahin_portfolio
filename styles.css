@@ -1,0 +1,189 @@
+/* ==========================================================================
+   Shahin Shaik - Executive Dark Portfolio Dossier
+   Theme: Luxury Dark Executive (Slate / Obsidian / Electric Teal / Bronze)
+   ========================================================================== */
+
+:root {
+  --bg-deep: #080C14;
+  --bg-surface: #0E1524;
+  --bg-card: #131B2E;
+  --bg-card-hover: #18233C;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-highlight: rgba(45, 212, 191, 0.3);
+  --text-primary: #F8FAFC;
+  --text-secondary: #94A3B8;
+  --text-muted: #64748B;
+  --accent-teal: #2DD4BF;
+  --accent-cyan: #38BDF8;
+  --accent-amber: #F59E0B;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-deep);
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg-deep);
+  color: var(--text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Stylish Display Typography */
+.font-display {
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: -0.025em;
+}
+
+.font-mono-tag {
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: -0.02em;
+}
+
+/* Dark Mesh Background Glow */
+.bg-dark-mesh {
+  background-color: #080C14;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(45, 212, 191, 0.06) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(56, 189, 248, 0.05) 0px, transparent 50%),
+    radial-gradient(at 50% 50%, rgba(15, 23, 42, 0.5) 0px, transparent 100%),
+    radial-gradient(at 100% 100%, rgba(245, 158, 11, 0.04) 0px, transparent 50%);
+}
+
+/* Subtle Dark Grid */
+.bg-dark-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+}
+
+/* Sleek Dark Executive Cards */
+.dark-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+}
+
+.dark-card:hover {
+  background-color: var(--bg-card-hover);
+  border-color: rgba(255, 255, 255, 0.16);
+  transform: translateY(-3px);
+  box-shadow: 0 16px 36px -12px rgba(0, 0, 0, 0.6),
+              0 0 20px -4px rgba(45, 212, 191, 0.08);
+}
+
+/* Featured Glowing Card (for MBA & First Prize) */
+.card-glow-teal {
+  border: 1px solid rgba(45, 212, 191, 0.4) !important;
+  box-shadow: 0 0 25px -5px rgba(45, 212, 191, 0.12),
+              inset 0 1px 0 0 rgba(45, 212, 191, 0.2);
+}
+
+.card-glow-amber {
+  border: 1px solid rgba(245, 158, 11, 0.4) !important;
+  box-shadow: 0 0 25px -5px rgba(245, 158, 11, 0.12),
+              inset 0 1px 0 0 rgba(245, 158, 11, 0.2);
+}
+
+/* Stylish Micro Pills */
+.dark-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.28rem 0.65rem;
+  border-radius: 9999px;
+  font-size: 0.725rem;
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.04);
+  color: #CBD5E1;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.2s ease;
+}
+
+.dark-pill:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #FFFFFF;
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.dark-pill-teal {
+  background-color: rgba(45, 212, 191, 0.1);
+  color: #5EEAD4;
+  border-color: rgba(45, 212, 191, 0.25);
+}
+
+.dark-pill-amber {
+  background-color: rgba(245, 158, 11, 0.1);
+  color: #FCD34D;
+  border-color: rgba(245, 158, 11, 0.25);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080C14;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1E293B;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Toast Notification */
+#toast-notification {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
+}
+
+#toast-notification.toast-hidden {
+  opacity: 0;
+  transform: translate(-50%, 20px) scale(0.95);
+  pointer-events: none;
+}
+
+#toast-notification.toast-visible {
+  opacity: 1;
+  transform: translate(-50%, 0) scale(1);
+  pointer-events: auto;
+}
+
+/* Respect Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .dark-card,
+  #toast-notification {
+    transition: none !important;
+    transform: none !important;
+  }
+}
+
+/* Print Rules */
+@media print {
+  body {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+  }
+  .dark-card {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+    border: 1px solid #CCCCCC !important;
+    box-shadow: none !important;
+    break-inside: avoid;
+  }
+  .no-print, #toast-notification {
+    display: none !important;
+  }
+}
